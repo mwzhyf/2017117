@@ -1,6 +1,6 @@
 #some exceptions i encountered and solved
 #[maven中发布web项目的站点名](http://note.youdao.com/noteshare?id=55a3b4bdb33bf1c0b5d750dc6818b62b&sub=94AA1D21D88B4749B7D297163940A42A)
-------
+-
 [Skipping non-war project](http://stackoverflow.com/questions/1174363/mvn-tomcatrun-doesnt-start-tomcat)
 
 -------------
