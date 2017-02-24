@@ -2,7 +2,10 @@
 
 
 [reference](http://www.imooc.com/video/7533) <br>
-localhost:8080/firstspringmvc/hello/mvc
+http://localhost:8080/spring-mvc-study/hello/mvc<br>
+http://localhost:8080/spring-mvc-study/courses/view?courseId=123<br>
+-----
 
 
+---------------
 
