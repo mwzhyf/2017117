@@ -12,4 +12,4 @@
 -
 [[WARNING] Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!](http://blog.csdn.net/testcs_dn/article/details/45583791)
 -
-[Cannot change version of project facet Dynamic web module to 2.5](http://blog.csdn.net/steveguoshao/article/details/38414145)
+[Cannot change version of project facet Dynamic web module to 2.5，完事之后的update一下maven项目](http://blog.csdn.net/steveguoshao/article/details/38414145)
