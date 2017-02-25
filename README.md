@@ -11,4 +11,8 @@ http://localhost:8080/spring-mvc-study/courses/view2/123
 ---
 http://localhost:8080/spring-mvc-study/courses/view3?courseId=1213
 ---------------
-
+http://localhost:8080/spring-mvc-study/courses/123
+----
+http://localhost:8080/spring-mvc-study/courses/jsontype/123
+-
+http://localhost:8080/spring-mvc-study/course_json.jsp?courseId=123
