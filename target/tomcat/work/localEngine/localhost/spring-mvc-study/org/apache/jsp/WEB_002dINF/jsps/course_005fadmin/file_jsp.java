@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class edit_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class file_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -58,42 +58,19 @@ public final class edit_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
       out.write("<title>我不是真正的慕课网</title>\r\n");
       out.write("\r\n");
-      out.write("<link rel=\"stylesheet\"\r\n");
-      out.write("\thref=\"");
+      out.write("<link rel=\"stylesheet\" href=\"");
       out.print(request.getContextPath());
-      out.write("/resources/css/main.css\"\r\n");
-      out.write("\ttype=\"text/css\" />\r\n");
+      out.write("/resources/css/main.css\" type=\"text/css\" />\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("\t<div id=\"main\">\r\n");
-      out.write("\t\t<div class=\"newcontainer\" id=\"course_intro\">\r\n");
-      out.write("\t\t  <form name=\"mainForm\" action=\"");
-      out.print( request.getContextPath());
-      out.write("/courses/save\" method=\"post\">\r\n");
-      out.write("\t\t    <div>\r\n");
-      out.write("\t\t       <span>课程名称:</span><input type=\"text\" id=\"title\" name=\"title\">\r\n");
-      out.write("\t\t    </div>\r\n");
-      out.write("\t\t    <div>\r\n");
-      out.write("\t\t       <span>课程时长:</span><input type=\"text\" id=\"duration\" name=\"duration\"> 秒\r\n");
-      out.write("\t\t    </div> \r\n");
-      out.write("\t\t    <div>\r\n");
-      out.write("\t\t       <span>课程难度:</span>\r\n");
-      out.write("\t\t       <select id=\"level\" name=\"level\">\r\n");
-      out.write("                  <option value=\"0\">初级</option>\r\n");
-      out.write("                  <option value=\"1\" selected=\"selected\">中级</option>\r\n");
-      out.write("                  <option value=\"2\">高级</option>\r\n");
-      out.write("                </select>\r\n");
-      out.write("\t\t    </div> \r\n");
-      out.write("\t\t    <div>\r\n");
-      out.write("\t\t       <span>课程介绍:</span>\r\n");
-      out.write("\t\t       <textarea id=\"descr\" name=\"descr\" rows=\"5\" style=\"width:480px\"></textarea>\r\n");
-      out.write("\t\t    </div> \r\n");
-      out.write("\t\t    <div>\r\n");
-      out.write("\t\t       <input type=\"submit\" id=\"btnPass\" value=\"提交\" />\r\n");
-      out.write("\t\t    </div> \r\n");
-      out.write("\t\t  </form>\r\n");
-      out.write("\t\t</div>\r\n");
-      out.write("\t</div>\r\n");
+      out.write("<div align=\"center\">\r\n");
+      out.write("\r\n");
+      out.write("<h1>上传附件</h1>\r\n");
+      out.write("<form method=\"post\" action=\"/spring-mvc-study/courses/doUpload\" enctype=\"multipart/form-data\">\r\n");
+      out.write("<input type=\"file\" name=\"file\"/>\r\n");
+      out.write("<input type=\"submit\"/>\r\n");
+      out.write("</form>\r\n");
+      out.write("</div>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {

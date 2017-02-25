@@ -63,8 +63,13 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 
-
+	<!-- 用户解析上载文件的类 -->
 	<!--200*1024*1024即200M resolveLazily属性启用是为了推迟文件解析，以便捕获文件大小异常 -->
+	<!-- 
+	maven依赖：
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+	 -->
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<property name="maxUploadSize" value="209715200" />

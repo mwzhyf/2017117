@@ -109,7 +109,7 @@ public class CourseController {
 		
 		if(!file.isEmpty()){
 			log.debug("Process file: {}", file.getOriginalFilename());
-			FileUtils.copyInputStreamToFile(file.getInputStream(), new File("c:\\temp\\imooc\\", System.currentTimeMillis()+ file.getOriginalFilename()));
+			FileUtils.copyInputStreamToFile(file.getInputStream(), new File("c:\\appp\\", System.currentTimeMillis()+ file.getOriginalFilename()));
 		}
 		
 		return "success";
@@ -124,7 +124,7 @@ public class CourseController {
 			MultipartFile file =  multiRequest.getFile(fileName);
 			if(!file.isEmpty()){
 				log.debug("Process file: {}", file.getOriginalFilename());
-				FileUtils.copyInputStreamToFile(file.getInputStream(), new File("c:\\temp\\imooc\\", System.currentTimeMillis()+ file.getOriginalFilename()));
+				FileUtils.copyInputStreamToFile(file.getInputStream(), new File("c:\\", System.currentTimeMillis()+ file.getOriginalFilename()));
 			}
 			
 		}
