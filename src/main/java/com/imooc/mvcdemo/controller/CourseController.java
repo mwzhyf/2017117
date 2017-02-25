@@ -52,11 +52,12 @@ public class CourseController {
 		
 		log.debug("In viewCourse, courseId = {}", courseId);
 		Course course = courseService.getCoursebyId(courseId);
+		System.out.println(courseId+"--------------");
 		model.addAttribute(course);
 		return "course_overview";
 	}
 	
-	//本方法将处理 /courses/view2/123 形式的URL
+	//本方法将处理 /courses/view2/123 形式的URL(路径变量)
 	@RequestMapping("/view2/{courseId}")
 	public String viewCourse2(@PathVariable("courseId") Integer courseId,
 			Map<String, Object> model) {
@@ -71,7 +72,8 @@ public class CourseController {
 	@RequestMapping("/view3")
 	public String viewCourse3(HttpServletRequest request) {
 		
-		Integer courseId = Integer.valueOf(request.getParameter("courseId"));		
+		Integer courseId = Integer.valueOf(request.getParameter("courseId"));	
+		
 		Course course = courseService.getCoursebyId(courseId);
 		request.setAttribute("course",course);
 		
