@@ -33,6 +33,7 @@
 
 
 	<!-- 配置ViewResolver。 可以用多个ViewResolver。 使用order属性排序。 InternalResourceViewResolver放在最后。 -->
+	<!-- ViewResolver：将相同的数据呈现成不同的数据表现形式 -->
 	<bean
 		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
 		<property name="order" value="1" />
